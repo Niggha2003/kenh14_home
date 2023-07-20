@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 4px 7px;
+    display: flex;
+    border-left: 1px solid #6e6a6a;
+    border-right: 1px solid #6e6a6a;
+}
+
+.search-input {
+    font-size: 1rem;
+    width: 142px;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.search-icon {
+    color: var(--white-color);
+    padding: 2px;
+    cursor: pointer;
+}

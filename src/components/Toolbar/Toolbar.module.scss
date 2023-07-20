@@ -1,0 +1,29 @@
+.wrapper {
+    font-size: 1.2rem;
+    background-color: var(--black-color);
+}
+
+.toolbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar-item-wrapper {
+    display: flex;
+}
+
+.toolbar-item {
+    color: rgb(255, 0, 0);
+    list-style: none;
+}
+
+.toolbar-item-link {
+    background-image: url(https://kenh14cdn.com/web_images/toolbar-topic-icon.png);
+    background-position: left 6px center;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 6px 10px 6px 23px;
+    display: inline-block;
+}

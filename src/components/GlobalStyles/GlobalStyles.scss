@@ -1,5 +1,10 @@
 @import 'normalize.css';
 
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,8 +16,9 @@ html {
 }
 
 body {
-    font-family: 'SFD', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'SFD', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #fff;
@@ -26,12 +32,11 @@ code {
 @font-face {
     font-family: SFD;
     src: url('/assets/fonts/SFD-Medium.woff2');
-    font-weight: 400
+    font-weight: 400;
 }
 
 @font-face {
     font-family: SFD;
     src: url('/assets/fonts/SFD-Bold.woff2');
-    font-weight: 700
+    font-weight: 700;
 }
-
