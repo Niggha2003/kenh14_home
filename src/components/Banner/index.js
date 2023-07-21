@@ -1,8 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Banner.module.scss';
 
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Grid from '../Grid';
 
 const cx = classNames.bind(styles);

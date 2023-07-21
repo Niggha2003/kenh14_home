@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const cx = classNames.bind(styles);
 
-function Search({ ...props }) {
+function Search() {
     return (
         <div className={cx('wrapper')}>
             <input className={cx('search-input')} placeholder="Tìm kiếm..."></input>

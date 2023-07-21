@@ -1,7 +1,7 @@
 .wrapper {
     height: 70px;
     background-color: #f0a52b;
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .banner-wrapper {
@@ -24,8 +24,8 @@
 .trending-wrapper {
     position: relative;
     padding-left: 30px;
-    margin-top: -5px;
-    margin-right: 25px;
+    margin-top: -7px;
+    margin-right: 27px;
 
     ::before {
         display: block;
@@ -35,6 +35,7 @@
         position: absolute;
         top: 8px;
         left: 0;
+        cursor: auto;
         content: '';
     }
 }

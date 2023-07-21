@@ -3,6 +3,8 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
+    --text-color: #333;
+    --subtext-color: #666;
 }
 
 * {
@@ -48,4 +50,9 @@ li {
 
 a {
     text-decoration: none;
+}
+
+// tippy style
+#tippy-1 {
+    width: 100%;
 }
