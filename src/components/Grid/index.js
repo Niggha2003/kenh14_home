@@ -1,6 +1,6 @@
-function Grid({ children, ...props }) {
+function Grid({ width = '1040px', margin = 'auto', children, ...props }) {
     return (
-        <div style={{ width: '1040px', margin: 'auto' }} {...props}>
+        <div style={{ width, margin }} {...props}>
             {children}
         </div>
     );

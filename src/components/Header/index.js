@@ -8,7 +8,6 @@ function Header() {
             <Toolbar></Toolbar>
             <Banner></Banner>
             <Navbar></Navbar>
-            <div style={{ height: '1000px' }}></div>
         </div>
     );
 }
