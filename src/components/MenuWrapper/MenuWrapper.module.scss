@@ -1,0 +1,102 @@
+.menu-wrapper {
+    padding: 20px 10px;
+}
+
+.orc-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+// css topics
+.topics {
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.topic-title {
+    height: 20px;
+    padding-left: 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000;
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        width: 14px;
+        height: 20px;
+        background: url(https://kenh14cdn.com/web_images/sprite-k14.20.png) -384px -124px no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+    }
+}
+
+.topic-list {
+    display: flex;
+}
+
+.topic-item {
+    width: 190px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.topic-item-link {
+    display: block;
+    width: 190px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+
+    img {
+        display: block;
+        width: 120%;
+        margin-left: -10%;
+        margin-top: -10%;
+        filter: blur(6px);
+    }
+
+    span {
+        padding: 0 12px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 1.7rem;
+        line-height: 40px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+// css information
+
+.info {
+    display: flex;
+    padding-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    margin-right: 27px;
+}
+
+.info-list {
+    display: flex;
+}
+
+.info-link {
+    a {
+        color: var(--subtext-color);
+        margin-left: 15px;
+    }
+}

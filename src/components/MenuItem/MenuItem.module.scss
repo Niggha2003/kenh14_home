@@ -1,0 +1,23 @@
+.wrapper {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 14px;
+    padding-left: 6px;
+    border-left: 3px solid #ff6610;
+    height: 12px;
+    line-height: 12px;
+}
+
+.content-item {
+    font-size: 1.3rem;
+    color: var(--subtext-color);
+    margin-bottom: 12px;
+}

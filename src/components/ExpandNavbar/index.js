@@ -8,6 +8,8 @@ import { faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
+import MenuWrapper from '../MenuWrapper';
+
 const cx = classNames.bind(styles);
 
 function ExpandNavbar({ ...props }) {
@@ -28,7 +30,9 @@ function ExpandNavbar({ ...props }) {
             delay={[1000, 0]}
             render={(attrs) => (
                 <div style={{ width: '100%' }} className="box" tabIndex="-1" {...attrs}>
-                    <div className={cx('menu-expand-wrapper')}></div>
+                    <div className={cx('menu-expand-wrapper')}>
+                        <MenuWrapper></MenuWrapper>
+                    </div>
                 </div>
             )}
             onShow={handleExpandNavbar}
@@ -36,9 +40,7 @@ function ExpandNavbar({ ...props }) {
         >
             <li {...props}>
                 {!navbarExpand ? (
-                    <a className={cx('navbar-item-link', 'expand-icon')} href="/" title="expand">
-                        {' '}
-                    </a>
+                    <div className={cx('navbar-item-link', 'expand-icon')}> </div>
                 ) : (
                     <div className={cx('close-btn')}>
                         <FontAwesomeIcon icon={faXmark} />
