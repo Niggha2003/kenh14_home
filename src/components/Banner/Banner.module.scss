@@ -1,0 +1,60 @@
+.wrapper {
+    height: 70px;
+    background-color: #f0a52b;
+    padding-top: 2px;
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 1.4rem;
+}
+
+.logo {
+    background-position: 0 0;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    background: url(https://kenh14cdn.com/web_images/k14_logo2022.svg) no-repeat !important;
+    background-size: auto 60px !important;
+}
+
+.trending-wrapper {
+    position: relative;
+    padding-left: 30px;
+    margin-top: -5px;
+    margin-right: 25px;
+
+    ::before {
+        display: block;
+        width: 19px;
+        height: 12px;
+        background: url(https://kenh14cdn.com/web_images/sprite-k14.20.png) -388px -55px no-repeat;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        content: '';
+    }
+}
+
+.trending-list {
+    display: flex;
+}
+
+.trending-item {
+    + .trending-item {
+        margin-left: 10px;
+    }
+}
+
+.trending-item-link {
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: block;
+    height: 28px;
+    padding: 0 15px;
+    line-height: 27px;
+    border-radius: 100px;
+}

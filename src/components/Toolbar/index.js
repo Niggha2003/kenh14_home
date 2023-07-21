@@ -1,8 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Toolbar.module.scss';
 
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Search from '../Search';
 import Grid from '../Grid';
 
@@ -12,7 +10,7 @@ function Toolbar() {
     return (
         <div className={cx('wrapper')}>
             <Grid className={cx('toolbar-wrapper')}>
-                <div className={cx('toolbar-item-wrapper')}>
+                <ul className={cx('toolbar-item-wrapper')}>
                     <li className={cx('toolbar-item')}>
                         <a className={cx('toolbar-item-link')} href="/">
                             EMAGAZINE
@@ -23,7 +21,7 @@ function Toolbar() {
                             SHOWLIVE
                         </a>
                     </li>
-                </div>
+                </ul>
                 <Search></Search>
             </Grid>
         </div>

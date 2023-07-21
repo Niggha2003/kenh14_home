@@ -14,7 +14,10 @@
 
 .toolbar-item {
     color: rgb(255, 0, 0);
-    list-style: none;
+
+    + .toolbar-item {
+        margin-left: 3px;
+    }
 }
 
 .toolbar-item-link {
@@ -22,8 +25,7 @@
     background-position: left 6px center;
     background-repeat: no-repeat;
     color: var(--white-color);
-    text-decoration: none;
     font-weight: 700;
-    padding: 6px 10px 6px 23px;
+    padding: 5.5px 10px 5.5px 20px;
     display: inline-block;
 }
