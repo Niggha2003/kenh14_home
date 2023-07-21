@@ -1,14 +1,9 @@
-import Banner from './components/Banner';
-import Navbar from './components/Navbar';
-import Toolbar from './components/Toolbar';
+import Header from './components/Header';
 
 function App() {
     return (
         <div className="App">
-            <Toolbar></Toolbar>
-            <Banner></Banner>
-            <Navbar></Navbar>
-            <div style={{ height: '1000px' }}></div>
+            <Header></Header>
         </div>
     );
 }

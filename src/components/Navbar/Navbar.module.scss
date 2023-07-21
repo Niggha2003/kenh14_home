@@ -1,9 +1,10 @@
 .wrapper {
-    background: #a70e1a;
+    background-color: #a70e1a;
     height: 40px;
     font-size: 1.5rem;
     position: sticky;
     top: 0;
+    transition: 0.3s;
 }
 
 .navbar-wrapper {

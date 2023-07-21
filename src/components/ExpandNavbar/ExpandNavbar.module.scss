@@ -6,7 +6,7 @@
     top: -10px;
     left: -5px;
     animation: fade-in 0.7s ease-in;
-    position: fixed;
+    transition: 0.5s;
 }
 
 .close-btn {

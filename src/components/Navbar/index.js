@@ -3,12 +3,23 @@ import styles from './Navbar.module.scss';
 
 import Grid from '../Grid';
 import ExpandNavbar from '../ExpandNavbar';
+import { useRef } from 'react';
 
 const cx = classNames.bind(styles);
 
 function Navbar() {
+    const navbar = useRef();
+
+    document.onscroll = function () {
+        if (navbar.current.offsetTop > 95) {
+            navbar.current.style.backgroundColor = 'black';
+        } else {
+            navbar.current.style.backgroundColor = '#a70e1a';
+        }
+    };
+
     return (
-        <div className={cx('wrapper')}>
+        <div ref={navbar} className={cx('wrapper')}>
             <Grid className={cx('navbar-wrapper')}>
                 <ul className={cx('navbar-list')}>
                     <li className={cx('navbar-item', 'home')}>

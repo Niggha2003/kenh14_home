@@ -27,7 +27,7 @@ function ExpandNavbar({ ...props }) {
         <Tippy
             placement="bottom"
             interactive="true"
-            delay={[1000, 0]}
+            delay={[700, 0]}
             render={(attrs) => (
                 <div style={{ width: '100%' }} className="box" tabIndex="-1" {...attrs}>
                     <div className={cx('menu-expand-wrapper')}>
