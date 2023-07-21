@@ -11,9 +11,15 @@ function Navbar() {
     const navbar = useRef();
 
     document.onscroll = function () {
-        if (navbar.current.offsetTop > 95) {
+        const scroll = document.documentElement.scrollTop || window.scrollY;
+        console.log(scroll);
+        if (scroll > 95) {
             navbar.current.style.backgroundColor = 'black';
+            navbar.current.style.position = 'fixed';
+            navbar.current.style.top = '0';
         } else {
+            navbar.current.style.position = 'relative';
+            navbar.current.style.top = '0';
             navbar.current.style.backgroundColor = '#a70e1a';
         }
     };

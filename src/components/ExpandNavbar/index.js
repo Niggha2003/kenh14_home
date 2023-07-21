@@ -4,7 +4,7 @@ import styles from './ExpandNavbar.module.scss';
 import React from 'react';
 import Tippy from '@tippyjs/react/headless';
 
-import { faSearch, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
