@@ -10,6 +10,7 @@ import MoreBlog from '../MoreBlog';
 
 import classNames from 'classnames/bind';
 import styles from './Body.module.scss';
+import CategoryNews from '../CategoryNews';
 
 const cx = classNames.bind(styles);
 
@@ -209,7 +210,34 @@ function Body() {
                     >
                         <MoreBlog moreBlogList={blog}></MoreBlog>
                     </BlogRow>
+                    <BlogRow
+                        href="https://github.com/atomiks/tippyjs-react"
+                        imgUrl="https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/21/photo1689929554314-1689929554447537019244.jpg"
+                        des="hello"
+                        title="Charlie Puth check-in tại Việt Nam, Amee và Suboi cùng dàn sao Việt rần rần vào chào đón"
+                        content="Charlie Puth cuối cùng đã tung hình ảnh chào khán giả Việt Nam trên trang cá nhân và sẵn sàng cháy hết mình trên sân khấu 8Wonder."
+                        width="250px"
+                        height="156px"
+                        sizeTitle="20px"
+                        sizeContent="13px"
+                        place="Star"
+                        time="1 giờ trước"
+                    ></BlogRow>
+                    <BlogRow
+                        href="https://github.com/atomiks/tippyjs-react"
+                        imgUrl="https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/21/photo1689929554314-1689929554447537019244.jpg"
+                        des="hello"
+                        title="Charlie Puth check-in tại Việt Nam, Amee và Suboi cùng dàn sao Việt rần rần vào chào đón"
+                        content="Charlie Puth cuối cùng đã tung hình ảnh chào khán giả Việt Nam trên trang cá nhân và sẵn sàng cháy hết mình trên sân khấu 8Wonder."
+                        width="250px"
+                        height="156px"
+                        sizeTitle="20px"
+                        sizeContent="13px"
+                        place="Star"
+                        time="1 giờ trước"
+                    ></BlogRow>
                 </Row>
+                <CategoryNews />
             </Grid>
         </div>
     );
