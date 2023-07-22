@@ -1,8 +1,6 @@
-import BlogCol from '../BlogCol';
 import BlogRow from '../BlogRow';
 import Grid from '../Grid';
 import Row from '../Row';
-import Col from '../Col';
 
 import FirstBlog from '../FirstBlog';
 import Swipe from '../Swipe';
@@ -12,6 +10,7 @@ import TrendingTag from '../TrendingTag';
 import classNames from 'classnames/bind';
 import styles from './Body.module.scss';
 import CategoryNews from '../CategoryNews';
+import FinalCategoryNews from '../FinalCategoryNews';
 
 const cx = classNames.bind(styles);
 
@@ -240,6 +239,7 @@ function Body() {
                 </Row>
                 <CategoryNews />
                 <TrendingTag></TrendingTag>
+                <FinalCategoryNews />
             </Grid>
         </div>
     );
