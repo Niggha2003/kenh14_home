@@ -4,6 +4,8 @@ import Grid from '../Grid';
 import Row from '../Row';
 import Col from '../Col';
 
+import Swipe from '../Swipe';
+
 import MoreBlog from '../MoreBlog';
 
 import classNames from 'classnames/bind';
@@ -27,6 +29,39 @@ function Body() {
             href: '/',
             title: 'Khoảnh khắc vỡ òa của đội tuyển New Zealand sau khi giành chiến thắng lịch sử tại World Cup nữ',
             time: '8 giờ trước',
+        },
+    ];
+
+    const item = [
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
+        },
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
+        },
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
+        },
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
+        },
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
+        },
+        {
+            content: 'hello xin chào tất cả mọi người',
+            href: 'https://www.facebook.com/',
+            src: 'https://kenh14cdn.com/thumb_w/250/203336854389633024/2023/7/22/photo1689996011916-16899960121061725455709.png',
         },
     ];
 
@@ -55,6 +90,7 @@ function Body() {
                         sizeTitle="19px"
                     ></BlogCol>
                 </Col>
+                <Swipe itemList={item} height="300px"></Swipe>
                 <div className={cx('space-red')}></div>
                 <Row>
                     <BlogRow
