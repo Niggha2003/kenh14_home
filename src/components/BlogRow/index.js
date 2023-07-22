@@ -17,9 +17,10 @@ function BlogRow({
     place,
     time,
     children,
+    backgroundColor,
 }) {
     return (
-        <div className={cx('wrapper')}>
+        <div style={{ backgroundColor }} className={cx('wrapper')}>
             <a href={href} title={title}>
                 {isVideo ? (
                     <video

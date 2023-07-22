@@ -6,6 +6,9 @@
     transition: 0.3s;
     left: 0;
     z-index: 2;
+    position: relative;
+    top: 0;
+    background-color: #a70e1a;
 }
 
 .navbar-wrapper {
@@ -26,6 +29,17 @@
 
     &:hover {
         background-color: #980d17;
+    }
+}
+
+.black {
+    background-color: black;
+    position: fixed;
+
+    .navbar-item {
+        &:hover {
+            background-color: #d5d5d57a;
+        }
     }
 }
 

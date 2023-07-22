@@ -14,13 +14,11 @@ function Navbar() {
         const scroll = document.documentElement.scrollTop || window.scrollY;
         console.log(scroll);
         if (scroll > 95) {
-            navbar.current.style.backgroundColor = 'black';
-            navbar.current.style.position = 'fixed';
-            navbar.current.style.top = '0';
+            navbar.current.classList.add(cx('black'));
         } else {
-            navbar.current.style.position = 'relative';
-            navbar.current.style.top = '0';
-            navbar.current.style.backgroundColor = '#a70e1a';
+            if (navbar.current.classList.contains(cx('black'))) {
+                navbar.current.classList.remove(cx('black'));
+            }
         }
     };
 

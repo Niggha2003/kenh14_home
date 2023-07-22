@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Swipe.module.scss';
 import SwipeItem from '../SwipeItem';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';

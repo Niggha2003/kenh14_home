@@ -3,15 +3,27 @@ import styles from './BlogCol.module.scss';
 
 const cx = classNames.bind(styles);
 
-function BlogCol({ href, imgUrl, des, title, content, width, height, sizeTitle, sizeContent, isVideo }) {
+function BlogCol({
+    href,
+    imgUrl,
+    des,
+    title,
+    content,
+    width,
+    height,
+    sizeTitle,
+    sizeContent,
+    isVideo,
+    backgroundColor,
+}) {
     return (
-        <div className={cx('wrapper')}>
+        <div style={{ backgroundColor }} className={cx('wrapper')}>
             <a href={href} title={title}>
                 {isVideo ? (
                     <video
                         className={cx('image')}
                         style={{ width, height }}
-                        poster="https://kenh14cdn.com/zoom/280_175/203336854389633024/2023/7/21/photo1689927487258-1689927488015752010363.gif.png"
+                        poster=""
                         muted=""
                         autoplay="true"
                         loop="true"
