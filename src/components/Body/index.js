@@ -7,6 +7,7 @@ import Col from '../Col';
 import FirstBlog from '../FirstBlog';
 import Swipe from '../Swipe';
 import MoreBlog from '../MoreBlog';
+import TrendingTag from '../TrendingTag';
 
 import classNames from 'classnames/bind';
 import styles from './Body.module.scss';
@@ -238,6 +239,7 @@ function Body() {
                     ></BlogRow>
                 </Row>
                 <CategoryNews />
+                <TrendingTag></TrendingTag>
             </Grid>
         </div>
     );

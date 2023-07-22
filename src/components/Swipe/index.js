@@ -8,7 +8,7 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
-function Swipe({ height, itemList = [], color = 'white', space }) {
+function Swipe({ height, itemList = [], backgroundColor = 'white', color = '#857f7f', space }) {
     const listLength = itemList.length;
     const quantityDot = listLength / 2;
     const contentWidth = !space ? -265 * listLength + 16 : -265 * listLength + 16 - 40;
@@ -71,12 +71,12 @@ function Swipe({ height, itemList = [], color = 'white', space }) {
     };
 
     return (
-        <div ref={wrapper} style={{ backgroundColor: color, height }} className={cx('wrapper')}>
+        <div ref={wrapper} style={{ backgroundColor, height }} className={cx('wrapper')}>
             <ul ref={control} className={cx('swipe-list')} style={{ padding: space ? '0 20px' : '0' }}>
                 {itemList.map((item, index) => {
                     return (
                         <li key={index} style={{ height: '80%' }}>
-                            <SwipeItem src={item.src} content={item.content} href={item.href}></SwipeItem>
+                            <SwipeItem space={space} src={item.src} content={item.content} href={item.href}></SwipeItem>
                         </li>
                     );
                 })}
@@ -92,7 +92,7 @@ function Swipe({ height, itemList = [], color = 'white', space }) {
                         ></span>
                     ) : (
                         <span
-                            style={{ backgroundColor: color === 'white' ? '#333' : 'white' }}
+                            style={{ backgroundColor: color }}
                             onClick={() => handleControlClick(index)}
                             key={index}
                         ></span>
