@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './CategoryNews.module.scss';
 
-import CategoryNewsItem from '../CategoryNewsItem';
+import CategoryNewsItem from './CategoryNewsItem';
 import Col from '../Col';
 import Row from '../Row';
 
