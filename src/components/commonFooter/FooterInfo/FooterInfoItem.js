@@ -14,7 +14,6 @@ function FooterInfoItem({
     linkTitle2,
     urlPosition2,
 }) {
-    console.log(urlPosition, urlPosition1, urlPosition2);
     return (
         <div className={cx('info-wrapper')}>
             <h4>{title}</h4>

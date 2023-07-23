@@ -13,7 +13,6 @@ function Navbar() {
 
     document.onscroll = function () {
         const scroll = document.documentElement.scrollTop || window.scrollY;
-        console.log(scroll);
         if (scroll > 95) {
             navbar.current.classList.add(cx('black'));
         } else {

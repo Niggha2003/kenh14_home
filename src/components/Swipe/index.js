@@ -21,7 +21,7 @@ function Swipe({
     const quantityDot = listLength / 2;
     const contentWidth = !space ? -265 * listLength + 16 : -265 * listLength + 16 - 40;
 
-    const defaultArray = new Array(quantityDot).fill(1);
+    const defaultArray = new Array(Math.round(quantityDot)).fill(1);
     defaultArray[0] = 0;
 
     const [array, setArray] = useState(defaultArray);
@@ -30,36 +30,39 @@ function Swipe({
     const wrapper = useRef();
 
     const handleControlClick = (i) => {
-        let newArray = new Array(quantityDot).fill(1);
+        let newArray = new Array(Math.round(quantityDot)).fill(1);
         newArray[i] = 0;
         setArray(newArray);
         const offset =
-            -535 * i - contentWidth < wrapper.current.offsetWidth
+            -528 * i - contentWidth < wrapper.current.offsetWidth
                 ? contentWidth + wrapper.current.offsetWidth
-                : -535 * i;
+                : -528 * i;
         control.current.style.transform = 'translate3d(' + offset + 'px, 0px, 0px)';
     };
 
     const handleMoveClick = (type) => {
         let nextIndex;
-        for (let i = 0; i < listLength; i++) {
+        for (let i = 0; i < Math.round(quantityDot); i++) {
             if (array[i] === 0) {
                 if (type === 'left') {
-                    nextIndex = i - 1;
+                    if (i === Math.round(quantityDot) - 1 && i >= 2) {
+                        nextIndex = i - 2;
+                    } else {
+                        nextIndex = i - 1;
+                    }
                 } else {
                     nextIndex = i + 1;
                 }
                 break;
             }
         }
-        let newArray = new Array(quantityDot).fill(1);
+        let newArray = new Array(Math.round(quantityDot)).fill(1);
         newArray[nextIndex] = 0;
         setArray(newArray);
         const offset =
-            -535 * nextIndex - contentWidth < wrapper.current.offsetWidth
+            -528 * nextIndex - contentWidth < wrapper.current.offsetWidth
                 ? contentWidth + wrapper.current.offsetWidth
-                : -535 * nextIndex;
-        console.log(offset, control.current.offsetWidth, contentWidth);
+                : -528 * nextIndex;
         control.current.style.transform = 'translate3d(' + offset + 'px, 0px, 0px)';
         control.current.style.marginRight = '0';
         control.current.style.marginLeft = '0';

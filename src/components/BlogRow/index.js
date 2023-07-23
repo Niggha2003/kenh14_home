@@ -28,8 +28,8 @@ function BlogRow({
                         style={{ width, height }}
                         poster="https://kenh14cdn.com/zoom/280_175/203336854389633024/2023/7/21/photo1689927487258-1689927488015752010363.gif.png"
                         muted=""
-                        autoplay="true"
-                        loop="true"
+                        autoPlay={true}
+                        loop={true}
                         data-src={imgUrl}
                         src={imgUrl}
                         data-loaded="true"

@@ -26,8 +26,8 @@ function BlogCol({
                         style={{ width, height }}
                         poster=""
                         muted=""
-                        autoplay="true"
-                        loop="true"
+                        autoPlay={true}
+                        loop={true}
                         data-src={imgUrl}
                         src={imgUrl}
                         data-loaded="true"

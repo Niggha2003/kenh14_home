@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './FooterMenu.module.scss';
 
 import Grid from '~/components/Grid';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -11,85 +12,85 @@ function FooterMenu() {
             <Grid className={cx('menu-wrapper')}>
                 <ul className={cx('navbar-list')}>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Star">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Star">
                             Star
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Musik">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Musik">
                             Musik
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Ciné">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Ciné">
                             Ciné
-                        </a>
+                        </Link>
                     </li>
 
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Đời sống">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Đời sống">
                             Đời sống
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Xã hội">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Xã hội">
                             Xã hội
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Thế giới đó đây">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Thế giới đó đây">
                             Thế giới đó đây
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Sức khỏe">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Sức khỏe">
                             Sức khỏe
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Made by Me">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Made by Me">
                             Made by Me
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Sport">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Sport">
                             Sport
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Khám phá">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Khám phá">
                             Khám phá
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="2-Tek">
+                        <Link className={cx('navbar-item-link')} to="/other" title="2-Tek">
                             2-Tek
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Dị">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Dị">
                             Dị
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Học đường">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Học đường">
                             Học đường
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Xem Mua Luôn">
+                        <Link className={cx('navbar-item-link')} to="/other" title="Xem Mua Luôn">
                             Xem Mua Luôn
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="http://video.kenh14.vn/" title="Video">
+                        <Link className={cx('navbar-item-link')} href="http://video.kenh14.vn/" title="Video">
                             Video
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="http://video.kenh14.vn/" title="Video">
+                        <Link className={cx('navbar-item-link')} href="http://video.kenh14.vn/" title="Quizz">
                             Quizz
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </Grid>
