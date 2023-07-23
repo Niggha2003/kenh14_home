@@ -1,0 +1,89 @@
+.wrapper {
+    margin-bottom: 35px;
+}
+
+.contact {
+    width: 520px;
+    padding: 15px 20px;
+}
+
+.contact-image {
+    display: block;
+    width: 60px;
+    height: 90px;
+    background-position: -187px -90px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(https://kenh14cdn.com/web_images/k14h-sprite_v1.png);
+    background-repeat: no-repeat;
+}
+
+.contact-info {
+    flex-grow: 1;
+
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #555;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+        color: #777;
+    }
+}
+
+.contact-common-question {
+    display: inline-block;
+    height: 24px;
+    padding: 0 6px 0 28px;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    margin-top: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #333;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-right: 12px;
+    margin-bottom: 5px;
+    position: relative;
+
+    &::before {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url(https://kenh14cdn.com/web_images/k14h-sprite_v1.png);
+        background-repeat: no-repeat;
+        background-position: -257px -119px;
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 6px;
+    }
+}
+
+.contact-email {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #333;
+    position: relative;
+
+    &::before {
+        display: block;
+        width: 13px;
+        height: 9px;
+        background-image: url(https://kenh14cdn.com/web_images/k14h-sprite_v1.png);
+        background-repeat: no-repeat;
+        background-position: -282px -119px;
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+}

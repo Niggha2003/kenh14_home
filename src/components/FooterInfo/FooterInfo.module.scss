@@ -1,0 +1,100 @@
+.info {
+    width: 309px;
+    position: relative;
+
+    + .info {
+        &::before {
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: rgb(222, 222, 222);
+            display: block;
+            position: absolute;
+            left: -30px;
+            top: 0;
+        }
+    }
+}
+
+.chat-mess {
+    display: inline-flex;
+    margin-top: 15px;
+    height: 24px;
+    padding: 0 15px;
+    background: #0084ff;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-right: 10px;
+
+    &:hover {
+        background: #054581;
+    }
+
+    span {
+        display: block;
+        margin-right: 5px;
+        width: 12px;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+}
+
+.detail {
+    display: block;
+    width: 104px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    height: 24px;
+    padding: 0 15px;
+    background: #fa5d37;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-radius: 2px;
+
+    &:hover {
+        background: #333;
+    }
+}
+
+.logo-company {
+    background-image: url(https://vccorp.mediacdn.vn/vccorp-s.png);
+    background-position: 0;
+    width: 100px;
+    height: 49px;
+    display: block;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+}
+
+.company {
+    font-family: Arial, Helvetica, sans-serif;
+
+    .company-title {
+        font-size: 14px;
+        font-weight: bold;
+        color: #555;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        span {
+            font-weight: 400;
+            text-transform: none;
+        }
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 18px;
+        color: #777;
+        margin-bottom: 15px;
+    }
+}
