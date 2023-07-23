@@ -28,6 +28,7 @@ function FirstBlog({ type, blog = [] }) {
                         height="289px"
                         sizeTitle="19px"
                         backgroundColor="#efefef75"
+                        padding="0 15px"
                     ></BlogCol>
                 )}
                 {!type && (
@@ -39,9 +40,9 @@ function FirstBlog({ type, blog = [] }) {
                             title={blog[1].title}
                             content={blog[1].content}
                             width="220px"
-                            height="289px"
-                            sizeTitle="19px"
-                            backgroundColor="wheat"
+                            height="100px"
+                            sizeTitle="15px"
+                            padding="0 0 15px 0"
                         ></BlogCol>
                         <BlogCol
                             href={blog[2].href}
@@ -50,9 +51,8 @@ function FirstBlog({ type, blog = [] }) {
                             title={blog[2].title}
                             content={blog[2].content}
                             width="220px"
-                            height="289px"
-                            sizeTitle="19px"
-                            backgroundColor="wheat"
+                            height="100px"
+                            sizeTitle="15px"
                         ></BlogCol>
                     </Row>
                 )}

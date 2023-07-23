@@ -54,7 +54,14 @@ function TrendingTag() {
                 <FontAwesomeIcon icon={faForward} />
                 <p>Charlie Puth Và Dàn Sao Việt Khuấy Đảo Đại Nhạc Hội 8Wonder</p>
             </div>
-            <Swipe height="360px" itemList={trends} backgroundColor="#e7e6e6" space></Swipe>
+            <Swipe
+                height="360px"
+                itemList={trends}
+                backgroundColor="rgb(241, 240, 240)"
+                itemBackgroundColor="white"
+                shadow
+                space
+            ></Swipe>
         </div>
     );
 }

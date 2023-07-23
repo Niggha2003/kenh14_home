@@ -5,9 +5,14 @@
 
 .title {
     margin: 10px 0;
+
     a {
         color: var(--text-color);
-        text-align: justify;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 3; /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
 
         &:hover {
             opacity: 0.8;

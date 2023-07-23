@@ -8,7 +8,15 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
-function Swipe({ height, itemList = [], backgroundColor = 'white', color = '#857f7f', space }) {
+function Swipe({
+    height,
+    itemList = [],
+    backgroundColor = 'rgb(163, 191, 194) 2c2',
+    itemBackgroundColor = 'rgb(163, 191, 194) 2c2',
+    color = '#857f7f',
+    space,
+    shadow,
+}) {
     const listLength = itemList.length;
     const quantityDot = listLength / 2;
     const contentWidth = !space ? -265 * listLength + 16 : -265 * listLength + 16 - 40;
@@ -76,7 +84,14 @@ function Swipe({ height, itemList = [], backgroundColor = 'white', color = '#857
                 {itemList.map((item, index) => {
                     return (
                         <li key={index} style={{ height: '80%' }}>
-                            <SwipeItem space={space} src={item.src} content={item.content} href={item.href}></SwipeItem>
+                            <SwipeItem
+                                backgroundColor={itemBackgroundColor}
+                                space={space}
+                                src={item.src}
+                                content={item.content}
+                                href={item.href}
+                                shadow={shadow}
+                            ></SwipeItem>
                         </li>
                     );
                 })}

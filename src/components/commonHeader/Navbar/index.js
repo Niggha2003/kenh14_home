@@ -4,6 +4,7 @@ import styles from './Navbar.module.scss';
 import Grid from '~/components/Grid';
 import ExpandNavbar from '../ExpandNavbar';
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -27,72 +28,72 @@ function Navbar() {
             <Grid className={cx('navbar-wrapper')}>
                 <ul className={cx('navbar-list')}>
                     <li className={cx('navbar-item', 'home')}>
-                        <a className={cx('navbar-item-link', 'home')} href="/">
+                        <Link className={cx('navbar-item-Link', 'home')} to="/">
                             TRANG CHỦ
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Star">
+                        <Link to="/other" title="Star">
                             Star
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Ciné">
+                        <Link to="/other" title="Ciné">
                             Ciné
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Musik">
+                        <Link to="/other" title="Musik">
                             Musik
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Beauty &amp; Fashion">
+                        <Link to="/other" title="Beauty &amp; Fashion">
                             Beauty &amp; Fashion
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Đời sống">
+                        <Link to="/other" title="Đời sống">
                             Đời sống
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Money-Z">
+                        <Link to="/other" title="Money-Z">
                             Money-Z
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Ăn - Quẩy - Đi">
+                        <Link to="/other" title="Ăn - Quẩy - Đi">
                             Ăn - Quẩy - Đi
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Xã hội">
+                        <Link to="/other" title="Xã hội">
                             Xã hội
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Thế giới đó đây">
+                        <Link to="/other" title="Thế giới đó đây">
                             Thế giới đó đây
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Sport">
+                        <Link to="/other" title="Sport">
                             Sport
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Học đường">
+                        <Link to="/other" title="Học đường">
                             Học đường
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="/" title="Xem Mua Luôn">
+                        <Link to="/other" title="Xem Mua Luôn">
                             Xem Mua Luôn
-                        </a>
+                        </Link>
                     </li>
                     <li className={cx('navbar-item')}>
-                        <a className={cx('navbar-item-link')} href="http://video.kenh14.vn/" title="Video">
+                        <a href="http://video.kenh14.vn/" title="Video">
                             Video
                         </a>
                     </li>

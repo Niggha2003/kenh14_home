@@ -3,10 +3,10 @@ import styles from './SwipeItem.module.scss';
 
 const cx = classNames.bind(styles);
 
-function SwipeItem({ src, href, content, space }) {
+function SwipeItem({ src, href, content, space, backgroundColor, shadow }) {
     const srcPath = 'url(' + src + ')';
     return (
-        <div className={cx('wrapper')}>
+        <div style={{ backgroundColor, boxShadow: shadow ? '0px 2px 10px #d0cdcd' : '' }} className={cx('wrapper')}>
             <a style={{ backgroundImage: srcPath }} className={cx('image')} href={href}>
                 {' '}
             </a>

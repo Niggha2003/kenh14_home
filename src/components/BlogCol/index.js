@@ -15,6 +15,7 @@ function BlogCol({
     sizeContent,
     isVideo,
     backgroundColor,
+    padding,
 }) {
     return (
         <div style={{ backgroundColor }} className={cx('wrapper')}>
@@ -35,7 +36,7 @@ function BlogCol({
                     <img className={cx('image')} style={{ width, height }} src={imgUrl} alt={des} />
                 )}
             </a>
-            <h4 style={{ fontSize: sizeTitle, width }} className={cx('title')}>
+            <h4 style={{ fontSize: sizeTitle, width, padding }} className={cx('title')}>
                 <a href={href} title={title}>
                     {title}
                 </a>

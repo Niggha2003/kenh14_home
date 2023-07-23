@@ -26,6 +26,22 @@
     display: block;
     cursor: pointer;
 
+    a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: var(--white-color);
+        padding: 0 6px;
+    }
+
+    a.home {
+        width: 12px;
+        padding: 0;
+        background: url(https://kenh14cdn.com/web_images/sprite-k14.20.png) -494px 12px no-repeat;
+        text-indent: -99999px;
+        overflow: hidden;
+    }
+
     &:hover {
         background-color: #980d17;
     }
@@ -42,28 +58,12 @@
     }
 }
 
-.navbar-item-link {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    color: var(--white-color);
-    padding: 0 6px;
-}
-
 .navbar-item.home {
     padding: 0 12px;
 
     &:hover .navbar-item-link.home {
         background: none;
     }
-}
-
-.navbar-item-link.home {
-    width: 12px;
-    padding: 0;
-    background: url(https://kenh14cdn.com/web_images/sprite-k14.20.png) -494px 12px no-repeat;
-    text-indent: -99999px;
-    overflow: hidden;
 }
 
 .navbar-item.expand-icon {
