@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Banner.module.scss';
 
-import Grid from '../Grid';
+import Grid from '~/components/Grid';
 
 const cx = classNames.bind(styles);
 

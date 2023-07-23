@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './FooterInfo.module.scss';
 
-import Col from '../Col';
-import Grid from '../Grid';
+import Col from '~/components/Col';
+import Grid from '~/components/Grid';
 import FooterInfoItem from './FooterInfoItem';
 
 const cx = classNames.bind(styles);

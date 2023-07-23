@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './FooterBanner.module.scss';
 
-import Col from '../Col';
-import Grid from '../Grid';
+import Col from '~/components/Col';
+import Grid from '~/components/Grid';
 
 const cx = classNames.bind(styles);
 

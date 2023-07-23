@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Navbar.module.scss';
 
-import Grid from '../Grid';
+import Grid from '~/components/Grid';
 import ExpandNavbar from '../ExpandNavbar';
 import { useRef } from 'react';
 

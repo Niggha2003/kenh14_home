@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './FinalCategoryNewsItem.module.scss';
 
-import Row from '../Row';
+import Row from '~/components/Row';
 
 const cx = classNames.bind(styles);
 

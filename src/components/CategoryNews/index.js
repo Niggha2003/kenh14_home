@@ -2,8 +2,8 @@ import classNames from 'classnames/bind';
 import styles from './CategoryNews.module.scss';
 
 import CategoryNewsItem from './CategoryNewsItem';
-import Col from '../Col';
-import Row from '../Row';
+import Col from '~/components/Col';
+import Row from '~/components/Row';
 
 const cx = classNames.bind(styles);
 

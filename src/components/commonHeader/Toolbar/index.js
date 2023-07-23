@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './Toolbar.module.scss';
 
-import Search from '../Search';
-import Grid from '../Grid';
+import ToolbarSearch from '../ToolbarSearch';
+import Grid from '~/components/Grid';
 
 const cx = classNames.bind(styles);
 
@@ -22,7 +22,7 @@ function Toolbar() {
                         </a>
                     </li>
                 </ul>
-                <Search></Search>
+                <ToolbarSearch></ToolbarSearch>
             </Grid>
         </div>
     );

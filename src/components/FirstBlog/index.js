@@ -1,6 +1,6 @@
-import BlogCol from '../BlogCol';
-import Col from '../Col';
-import Row from '../Row';
+import BlogCol from '~/components/BlogCol';
+import Col from '~/components/Col';
+import Row from '~/components/Row';
 
 function FirstBlog({ type, blog = [] }) {
     return (

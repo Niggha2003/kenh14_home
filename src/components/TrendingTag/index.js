@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './TrendingTag.module.scss';
-import Swipe from '../Swipe';
+
+import Swipe from '~/components/Swipe';
 
 import { faArrowRight, faForward } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

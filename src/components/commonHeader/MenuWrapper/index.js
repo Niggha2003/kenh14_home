@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './MenuWrapper.module.scss';
 
 import MenuItem from '../MenuItem';
-import Grid from '../Grid';
+import Grid from '~/components/Grid';
 
 const cx = classNames.bind(styles);
 

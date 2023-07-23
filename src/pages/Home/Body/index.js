@@ -1,16 +1,16 @@
-import BlogRow from '../BlogRow';
-import Grid from '../Grid';
-import Row from '../Row';
+import BlogRow from '~/components/BlogRow';
+import Grid from '~/components/Grid';
+import Row from '~/components/Row';
 
-import FirstBlog from '../FirstBlog';
-import Swipe from '../Swipe';
-import MoreBlog from '../MoreBlog';
-import TrendingTag from '../TrendingTag';
+import FirstBlog from '~/components/FirstBlog';
+import Swipe from '~/components/Swipe';
+import MoreBlog from '~/components/MoreBlog';
+import TrendingTag from '~/components/TrendingTag';
 
 import classNames from 'classnames/bind';
 import styles from './Body.module.scss';
-import CategoryNews from '../CategoryNews';
-import FinalCategoryNews from '../FinalCategoryNews';
+import CategoryNews from '~/components/CategoryNews';
+import FinalCategoryNews from '~/components/FinalCategoryNews';
 
 const cx = classNames.bind(styles);
 
